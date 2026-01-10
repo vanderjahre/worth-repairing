@@ -1,0 +1,29 @@
+#archive-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.chapter-item {
+    text-align: center;
+    width: 200px;
+}
+
+.chapter-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.chapter-item img:hover {
+    transform: scale(1.05);
+}
+
+.chapter-item p {
+    margin-top: 10px;
+    font-weight: bold;
+}

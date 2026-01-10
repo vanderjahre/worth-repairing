@@ -1,0 +1,146 @@
+/* --- Color Palette --- */
+:root {
+    --background-color: #1a1a1a;
+    --container-background: #2e2e2e;
+    --text-color: #e0e0e0;
+    --button-background: #B34700;
+    --button-border-color: #333;
+    --button-disabled-opacity: 0.5;
+    --dropdown-background: #222;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: var(--container-background);
+    max-width: 1000px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    position: relative;
+}
+
+.header-banner {
+    display: none; /* Banner hidden as requested */
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.header-title-image {
+    max-height: 100px;
+    max-width: 100%;
+}
+
+header h1 a,
+header nav a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+header nav a {
+    background-color: var(--button-background);
+    border: 1px solid var(--button-border-color);
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+}
+
+.top-nav, .bottom-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+}
+
+.top-nav a, .bottom-nav a, .top-nav select, .bottom-nav select {
+    color: var(--text-color);
+    background-color: var(--button-background);
+    border: 1px solid var(--button-border-color);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    margin: 0.25rem 0.5rem;
+    border-radius: 5px;
+}
+
+.top-nav select, .bottom-nav select {
+    background-color: var(--dropdown-background);
+}
+
+.comic-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+#comic-image {
+    width: 100%;
+    height: auto;
+}
+
+.blog-section {
+    width: 100%;
+    border-top: 1px solid var(--button-border-color);
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: var(--button-disabled-opacity);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 600px) {
+    header {
+        height: auto; /* Allow header to grow */
+    }
+
+    .header-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem; /* Add space between title and nav */
+        padding: 1rem;
+    }
+
+    header nav a {
+        margin: 0 0.5rem; /* Adjust margin for centered layout */
+    }
+}
