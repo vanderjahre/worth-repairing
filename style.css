@@ -35,51 +35,41 @@ h2 {
     margin-bottom: 1rem;
 }
 
+/* --- Header --- */
 header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    min-height: 100px;
-    position: relative;
-}
-
-.header-banner {
-    display: none; /* Banner hidden as requested */
-}
-
-.header-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-}
-
-header h1 {
-    margin: 0;
+    gap: 1rem; /* Replaces margin for spacing between elements */
+    margin-bottom: 1rem;
 }
 
 .header-title-image {
-    max-height: 100px;
     max-width: 100%;
+    height: auto;
+    display: block;
+    max-height: 120px; /* Maintain original max-height */
 }
 
-header h1 a,
-header nav a {
+header nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Adds space between nav links */
+}
+
+nav a {
     color: var(--text-color);
     text-decoration: none;
-}
-
-header nav a {
     background-color: var(--button-background);
     border: 1px solid var(--button-border-color);
     padding: 0.5rem 1rem;
-    margin-left: 1rem;
     border-radius: 5px;
+    /* margin is no longer needed thanks to gap */
 }
 
-.top-nav, .bottom-nav {
+/* --- Navigation --- */
+.top-nav,
+.bottom-nav {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -88,7 +78,10 @@ header nav a {
     flex-wrap: wrap;
 }
 
-.top-nav a, .bottom-nav a, .top-nav select, .bottom-nav select {
+.top-nav a,
+.bottom-nav a,
+.top-nav select,
+.bottom-nav select {
     color: var(--text-color);
     background-color: var(--button-background);
     border: 1px solid var(--button-border-color);
@@ -98,10 +91,12 @@ header nav a {
     border-radius: 5px;
 }
 
-.top-nav select, .bottom-nav select {
+.top-nav select,
+.bottom-nav select {
     background-color: var(--dropdown-background);
 }
 
+/* --- Comic & Blog --- */
 .comic-container {
     width: 100%;
     display: flex;
@@ -127,20 +122,14 @@ header nav a {
     opacity: var(--button-disabled-opacity);
 }
 
-/* --- Responsive Design --- */
+/* --- Responsive Styles --- */
 @media (max-width: 600px) {
-    header {
-        height: auto; /* Allow header to grow */
-    }
-
-    .header-content {
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem; /* Add space between title and nav */
-        padding: 1rem;
-    }
-
-    header nav a {
-        margin: 0 0.5rem; /* Adjust margin for centered layout */
+    .top-nav a,
+    .bottom-nav a,
+    .top-nav select,
+    .bottom-nav select {
+        padding: 0.3rem 0.4rem;
+        font-size: 0.8rem;
+        margin: 0.2rem;
     }
 }
