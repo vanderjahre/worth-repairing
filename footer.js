@@ -60,7 +60,7 @@ class SiteFooter extends HTMLElement {
               </a>
             </div>
           </div>
-          <p>&copy; ${year} Dave Genu</p>
+          <p>&copy; ${year} Vanderjahre</p>
         </footer>
       `;
       this.shadowRoot.appendChild(template.content.cloneNode(true));

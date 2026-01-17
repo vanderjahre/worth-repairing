@@ -6,5 +6,13 @@
     "2": {
         "note": "This is the note for the second comic.",
         "published": "Jan 10, 2026"
+    },
+    "3": {
+        "note": "This is the note for the third comic.",
+        "published": "Jan 17, 2026"
+    },
+    "4": {
+        "note": "This is the note for the fourth comic.",
+        "published": "Jan 17, 2026"
     }
 }

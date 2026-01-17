@@ -18,7 +18,7 @@ const navButtons = {
 
 // --- Chapter Configuration ---
 const chaptersConfig = [
-    { chapter: 1, pages: 2, name: 'Chapter 1', cover: 'images/covers/chapter1.png' },
+    { chapter: 1, pages: 4, name: '1: Golden Beauty', cover: 'images/covers/chapter1.png' },
 ];
 
 // --- Pre-calculate chapter data ---
