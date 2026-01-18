@@ -1,3 +1,7 @@
+.archive-main {
+    padding-top: 10px;
+}
+
 #archive-container {
     display: flex;
     flex-wrap: wrap;

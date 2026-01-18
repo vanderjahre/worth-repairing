@@ -1,0 +1,26 @@
+.not-found-main {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.not-found-main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.not-found-main a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.not-found-main a:hover {
+    text-decoration: none;
+}
+
+.not-found-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
