@@ -78,6 +78,7 @@ async function updatePage(page) {
     updateNav(page);
     if (chapterSelect.value != page) chapterSelect.value = page;
     if (chapterSelectBottom.value != page) chapterSelectBottom.value = page;
+    window.scrollTo(0, 0);
 }
 
 function updateNav(page) {
